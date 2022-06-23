@@ -11,6 +11,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.1.3",
+<<<<<<< HEAD
     "cloudinary": "^1.30.0",
     "connect-flash": "^0.1.1",
     "express": "^4.18.1",
@@ -19,18 +20,33 @@
     "express-session": "^1.17.2",
     "fs-extra": "^10.1.0",
     "http-errors": "^2.0.0",
+=======
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
     "method-override": "^3.0.0",
     "mongoose": "^6.2.3",
     "morgan": "^1.10.0",
     "passport": "^0.5.2",
+<<<<<<< HEAD
     "passport-local": "^1.0.0"
+=======
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.1"
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.5",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
+<<<<<<< HEAD
     "dotenv": "^16.0.1",
+=======
+    "dotenv": "^16.0.0",
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
     "handlebars": "^4.5.3",
     "nodemon": "^2.0.15",
     "npm-check-updates": "^12.5.4"

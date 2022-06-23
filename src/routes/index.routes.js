@@ -16,10 +16,8 @@ router.get("/espanol", (req, res) => {
   res.render('espanol'); //render llama el texto de ./views/index.html
 });
 
-router.get("/sesion", (req, res) => {
-  res.render('sesion'); //render llama el texto de ./views/index.html
-});
 
+<<<<<<< HEAD
 router.post('/users/add', async (req, res) => {
   var usuarios= Usuarios(req.body)
   const usuarioguardado= await usuarios.save()
@@ -34,6 +32,8 @@ router.post('/tasks/add', (req, res)=>{
   console.log(task)
   res.send('saved')
 })
+=======
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
 
 //español
 router.get("/iniciar", (req, res) => {

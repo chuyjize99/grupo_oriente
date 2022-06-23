@@ -15,10 +15,19 @@ const TaskSchema = new Schema(
       trim: true, //quita los espacios inecesarios del string
     },
     done: { type: Boolean, default: false,},
+<<<<<<< HEAD
   },
   {
+=======
+    
+    user: {
+      type: String,
+      required:true
+    },
+  },{
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
     timestamps: true,
-    versionKey: false,
+  
   }
 );
 

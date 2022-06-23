@@ -9,13 +9,26 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
 //initializations
 const app = express(); //creo el modulo app
 require('./config/passport');
 
+<<<<<<< HEAD
 //settings
 app.set('port',process.env.PORT || 27017)
 app.set("views", path.join(__dirname, "views")); //dirname es para encontrar ruta a la carpeta views
+=======
+
+
+//settings
+app.set('port',process.env.PORT || 3000)
+app.set("views", path.join(__dirname, "views")); //dirname es para encontrar ruta a la carpeta views
+
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
 //motor de plantillas 
 app.engine(
   '.hbs', 
@@ -28,12 +41,18 @@ app.engine(
     tareaDir:path.join(app.get("views"),"tareas"),
     clienteDir:path.join(app.get("views"), "clientes"),
     usuariosDir:path.join(app.get("views"),"usuarios"),
+<<<<<<< HEAD
+=======
+    mensajesDir:path.join(app.get("views"),"chat"),
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
     defaultLayout: "main", //sirve para encontrar por defecto main de /views/layouts
     extname: '.hbs',                   //indicamos cual es la extencion va a tomar
     handlebars: handlebars 
   })
 );
 app.set("view engine", ".hbs"); //establecer el motor de plantilla
+
+
 
 //middlewares
 app.use(morgan('dev'));
@@ -47,10 +66,13 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+<<<<<<< HEAD
 app.use(fileUpload);{
   useTempFiles: true
   tempFileDir:'./imagenes'
 }
+=======
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
 
 //variables globales
 app.use((req, res,next)=>{
@@ -66,6 +88,10 @@ app.use(require('./routes/index.routes'));
 app.use(require('./routes/tareas.routes'));
 app.use(require('./routes/clientes.routes'));
 app.use(require('./routes/usuarios.routes'));
+<<<<<<< HEAD
+=======
+app.use(require('./routes/chat.routes'));
+>>>>>>> acbf042b8c8d659b93d72138e440d96020815cd9
  
 //static file
 app.use(express.static(path.join(__dirname,'public')));
